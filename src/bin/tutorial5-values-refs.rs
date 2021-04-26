@@ -46,6 +46,7 @@ fn returns_mut_ref(input: &mut String) -> &mut String {
 
 fn main() {
     let _str1 = "foo".to_string();
+
     //_str1 = "bar".to_string(); // Doesn't work because str1 wasn't declared mutable
     //_str1.remove(0); // Doesn't work because str1 wasn't declared mutable
 
@@ -58,7 +59,7 @@ fn main() {
     println!("{}", str1);
     takes_value(str1);
 
-    println!("{}", str1); // Doesn't work because str1 has been moved
+    //println!("{}", str1); // Doesn't work because str1 has been moved
 
     let str1 = "foo".to_string();
     let str2 = takes_returns_value(str1);

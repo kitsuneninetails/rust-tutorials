@@ -37,8 +37,15 @@ fn main() {
             x: Xval(320),
             y: Yval(200),
         },
-        color: ColorType::Standard(Color::Black)
+        color: ColorType::Standard(Color::Magenta)
     };
+    let foo = 1;
+    match foo {
+        1 => {},
+        2 => {},
+        3 => {},
+        _ => {},
+    }
 
     let color_str = match pix1.color {
         ColorType::Rgb(r, g, b) => format!("R: {}, G: {}, B: {}", r, g, b),

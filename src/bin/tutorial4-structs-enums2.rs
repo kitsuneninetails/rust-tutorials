@@ -1,5 +1,3 @@
-extern crate rust_tutorials;
-
 use rust_tutorials::test_mod::{color::{Color, ColorType}, pixel::Pixel};
 
 fn main() {
